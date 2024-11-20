@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  /*display: grid;*/
+  /*grid-template-columns: repeat(8, 1fr);*/
+  /*grid-template-rows: auto;*/
+  /*gap: 30px;*/
+
+  padding: 10px;
+}
+
+.cardUser {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 11px -1px rgba(0, 0, 0, 0.75);
+
+  text-align: center;
+}
