@@ -6,25 +6,82 @@
   box-sizing: border-box;
 
   font-family: "Roboto", serif;
-  font-weight: 400;
-  font-style: normal;
+  font-size: 20px;
 }
 
-.container {
-  /*display: grid;*/
-  /*grid-template-columns: repeat(8, 1fr);*/
-  /*grid-template-rows: auto;*/
-  /*gap: 30px;*/
-
-  padding: 10px;
+button {
+  background: yellow;
+  border: none;
+  color: orangered;
+  padding: 1vw;
+  cursor: pointer;
+  transition: ease 0.3s;
 }
 
-.cardUser {
-  width: 100%;
-  height: auto;
-  padding: 5px;
+button:hover {
   border-radius: 20px;
-  box-shadow: 1px 1px 11px -1px rgba(0, 0, 0, 0.75);
+  border: 1px solid orangered;
+}
 
+button:active {
+  transform: scale(0.9) translate(2px, 2px);
+}
+
+input {
+  background: white;
+  border: none;
+  color: orangered;
+  padding: 1vw;
+}
+
+.data-manager {
+  background: dodgerblue;
+  padding: 3vh 25vw;
+  width: 100%;
+  height: 100vh;
+}
+
+.data-manager label {
+  color: white;
+}
+
+.data-manager__title {
+  font-size: 1.5em;
   text-align: center;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.data-manager__content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: max-content 1fr;
+  gap: 1vw;
+}
+
+.data-manager__content-section {
+  padding: 1vw;
+  font-size: 1em;
+}
+
+.one,
+.two,
+.four {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: end;
+}
+
+.four {
+  justify-content: start;
+}
+
+.three {
+}
+
+.data-manager__list {
+  height: 50vh;
+  overflow: auto;
+  color: white;
 }

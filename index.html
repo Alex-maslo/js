@@ -7,9 +7,38 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <script src="script.js"></script>
+    <title>exam-test</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="data-manager">
+        <h1 class="data-manager__title">Дата органайзер</h1>
+
+        <div class="data-manager__content-wrapper">
+          <div class="data-manager__content-section one">
+            <label for="data-input">Пара і'мя/значення</label>
+            <input
+              type="text"
+              name="data-input"
+              id="data-input"
+              placeholder="Введіть і'мя/значення"
+            />
+          </div>
+          <div class="data-manager__content-section two">
+            <button id="button-add">Додати</button>
+          </div>
+          <div class="data-manager__content-section">
+            <ul id="data-manager__list" class="data-manager__list"></ul>
+          </div>
+          <div class="data-manager__content-section four">
+            <button id="button-sort-name">Сортувати за ім'ям</button>
+            <button id="button-sort-value">Сортувати за значенням</button>
+            <button id="button-delete">Видалити виділене</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
